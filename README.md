@@ -2,6 +2,8 @@
 
 Simple countdown counter in javaScript.
 
+![alt text](http://development.harbor.by/img/github/timer/headerS2000.jpg?v=01)
+
 ![alt text](http://development.harbor.by/img/github/timer/Logo%20590x300.jpg?v=01)
 
 # Customization
