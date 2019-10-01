@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="./css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+        <script src="./js/timer.js"></script>
+        <script type ="text/javascript">
+            window.onload = function what(){
+                new timerRuslanL({
+                    // Program status (true - works; false - does not work)
+                    statys: true,
+
+                    // Date
+                    year:   2020,   // year 
+                    month:  0,      // month (0 - 11)
+                    days:   1,      // days (1 - ..)
+                    hours:  0,      // hours (0 - 23)
+                    minutes:0,      // minutes (0 - 59)
+                    second: 0,      // second (0 - 59)
+
+                    // Data output (id element)
+                    elementIdDays:   "timerDays",        // id element to display "Days"
+                    elementIdHours:  "timerHours",       // id element to display "Hours"
+                    elementIdMinutes: "timerMinutes",    // id element to display "Minutes"
+                    elementIdSeconds: "timerSeconds"     // id element to display "Seconds"
+                });
+            };
+        </script>
+        <style>
+            html {
+                height: 100%;
+                background: #ffffff;
+                font-family: 'Karla', sans-serif;
+            }
+            header {
+                padding: 20px;
+                background: #f7de1f;
+            }
+            h1 {
+                text-align: center;
+                color: #000000;
+            }
+            img {
+                height: 50px;
+                padding: 10px;
+                filter: grayscale(80%); 
+            }
+            img.noGrayscale{
+                filter: grayscale(0%); 
+            }
+            img:hover {
+                filter: grayscale(0%);
+            }
+            section {
+                position: absolute;
+                bottom: 20px;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Countdown timer</h1>
+        </header>
+        <section>
+            <img src="./img/html5.png">
+            <img src="./img/css3.png">
+            <img class="noGrayscale" src="./img/js.png">
+        </section>
+        <div id="timer" class="timerStyle">
+            <div>
+                <div class="blockTime">
+                    <div id="timerDays" class="textTimerNumber">00</div>
+                    <div class="textTimer">Days</div>
+                </div>
+            </div>
+            <div>
+                <div class="blockTime">
+                    <div id="timerHours" class="textTimerNumber">00</div>
+                    <div class="textTimer">Hours</div>
+                </div>
+           </div>
+            <div>
+                <div class="blockTime">
+                    <div id="timerMinutes" class="textTimerNumber">00</div>
+                    <div class="textTimer">Minutes</div>
+                </div>
+            </div>
+            <div>
+                <div class="blockTime">
+                    <div id="timerSeconds" class="textTimerNumber">00</div>
+                    <div class="textTimer">Seconds</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
