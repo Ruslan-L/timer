@@ -4,6 +4,9 @@ Simple countdown counter in javaScript.
 
 ![alt text](http://development.harbor.by/img/github/timer/headerS2000.jpg?v=02)
 
+[Demo]
+[Demo]:http://development.harbor.by/
+
 # Customization
 
 ```js
